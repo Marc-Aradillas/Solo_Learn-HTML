@@ -1,0 +1,17 @@
+
+/* centered image coding;
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+This will set the display property of all <img> elements to "block", 
+which will make them behave like block-level elements and take up the 
+full width of their parent container. The margin property is then set 
+to "0 auto", which will center the element horizontally within its parent 
+container.
+
+*/
+body   {	 }
+
