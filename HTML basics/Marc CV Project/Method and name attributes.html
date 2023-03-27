@@ -1,0 +1,33 @@
+<!-- The method attribute specifies the HTTP method (GET or POST) to be used when forms are submitted (see below for description):-->
+<form action="url" method="GET">
+<form action="url" method="POST">
+  
+<!-- When you use GET, the form data will be visible in the page address.
+
+Use POST if the form is updating data, or includes sensitive information (passwords).
+POST offers better security because the submitted data is not visible in the page address.
+
+To take in user input, you need the corresponding form elements, such as text fields. 
+The <input> element has many variations, depending on the type attribute. It can be a text, 
+password, radio, URL, submit, etc.
+
+The example below shows a form requesting a username and password
+-->
+
+
+<form>
+    <input type="text" name="username" /><br />
+    <input type="password" name="password" />
+</form>
+  
+<!-- If we change the input type to radio, it allows the user select only one of a number of choices:-->
+  
+<input type="radio" name="gender" value="male" />Male <br />
+<input type="radio" name="gender" value="female" />Female <br />
+  
+<!-- The type "checkbox" allows the user to select more than one option: -->
+
+<input type="checkbox" name="gender" value="1" />Male <br />
+<input type="checkbox" name="gender" value="2" />Female <br />
+
+  <!-- The <input> tag has no end tag. -->
