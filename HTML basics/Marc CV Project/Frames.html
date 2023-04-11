@@ -1,0 +1,38 @@
+<!-- The <frame> Tag
+
+A page can be divided into frames using a special frame document.
+
+The <frame> tag defines one specific window (frame) within a <frameset>. Each <frame> 
+in a <frameset> can have different attributes, such as border, scrolling, the ability to resize, etc.
+
+The <frameset> element specifies the number of columns or rows in the frameset, as well as what percentage 
+or number of pixels of space each of them occupies.
+
+framesetcols="100, 25%, *"></frameset>
+<frameset rows="100, 25%, *"></frameset>
+
+The <frameset> tag is not supported in HTML5. 
+
+___________________________________________________________
+
+Working with Frames
+
+
+Use the <noresize> attribute to specify that a user cannot resize a <frame> element:
+<frame noresize="noresize">
+
+Frame content should be defined using the src attribute.
+
+Lastly, the <noframes> element provides a way for browsers that do not support frames 
+to view the page. The element can contain an alternative page, complete with a body tag and any other elements.
+
+<frameset cols="25%,50%,25%">
+   <frame src="a.htm" />
+   <frame src="b.htm" />
+   <frame src="c.htm" />
+   <noframes>Frames not supported!</noframes>
+</frameset>
+
+The <frame> tag is not supported in HTML5.
+
+-->
