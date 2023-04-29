@@ -1,0 +1,22 @@
+The <header> Element
+
+In HTML4, we would define a header like this:
+
+<div id="header">
+
+In HTML5, a simple <header> tag is used, instead.
+
+The <header> element is appropriate for use inside the body tag.
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <header>
+            <h1>Most important heading</h1>
+            <h3>Less important heading</h3>
+        </header>
+    </body>
+</html>
+
+Note that the <header> is completely different from the <head> tag.
