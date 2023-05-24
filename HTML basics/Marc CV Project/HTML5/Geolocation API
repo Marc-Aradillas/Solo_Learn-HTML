@@ -1,7 +1,0 @@
-What is the Geolocation API?
-
-In HTML5, the Geolocation API is used to obtain the user's geographical location.
-
-Since this can compromise user privacy, the option is not available unless the user approves it.
-
-Geolocation is much more accurate for devices with GPS, like smartphones and the like.
