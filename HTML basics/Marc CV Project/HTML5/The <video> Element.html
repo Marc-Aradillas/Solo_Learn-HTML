@@ -1,0 +1,26 @@
+The video element is similar to the audio element.
+You can specify the video source URL using an attribute in a video element, or using source elements inside the video element:
+
+<video controls>
+   <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4">
+   <source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg">
+   Video is not supported by your browser
+</video>
+
+Another aspect that the audio and video elements have in common is that the major browsers do not all support the same file types. 
+If the browser does not support the first video type, it will try the next one.
+
+
+Attributes of <video>
+
+Another aspect shared by both the audio and the video elements is that each has controls, autoplay and loop attributes.
+
+In this example, the video will replay after it finishes playing:
+  
+<video controls autoplay loop>
+   <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4">
+   <source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg">
+   Video is not supported by your browser
+</video>
+  
+*** Currently, there are three supported video formats for the <video> element: MP4, WebM, and OGG. ***
