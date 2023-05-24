@@ -20,8 +20,7 @@ Multiple <source> elements can be linked to different audio files. The browser w
     
 
     
-    
-    
+Audio on the Web
     
 The <audio> element creates an audio player inside the browser.
     
@@ -32,3 +31,29 @@ The <audio> element creates an audio player inside the browser.
 </audio>
     
     The text between the <audio> and </audio> tags will display in browsers that do not support the <audio> element.
+    
+
+    
+    
+Attributes of <audio>
+
+controls
+Specifies that audio controls should be displayed (such as a play/pause button, etc.)
+
+autoplay
+When this attribute is defined, audio starts playing as soon as it is ready, without asking for the visitor's permission.
+
+<audio controls autoplay>
+    <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+    Audio element not supported by your browser. 
+</audio>
+
+loop
+This attribute is used to have the audio replay every time it is finished.
+    
+<audio controls autoplay loop>
+    <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+    Audio element not supported by your browser. 
+</audio>
+
+*** Currently, there are three supported file formats for the <audio> element: MP3, WAV, and OGG. ***
