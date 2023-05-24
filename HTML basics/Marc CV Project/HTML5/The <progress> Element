@@ -1,0 +1,15 @@
+Progress Bar
+
+The <progress> element provides the ability to create progress bars on the web.
+The progress element can be used within headings, paragraphs, or anywhere else in the body.
+
+Progress Element Attributes
+Value: Specifies how much of the task has been completed.
+Max: Specifies how much work the task requires in total.
+
+Example:
+
+Status: <progress min="0" max="100" value="35"> 
+</progress>
+
+Use the <progress> tag in conjunction with JavaScript to dynamically display a task's progress.
