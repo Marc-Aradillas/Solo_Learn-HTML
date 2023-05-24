@@ -21,3 +21,27 @@ ErrorHandler(optional): Defines the callback method that is invoked when an erro
 Options (optional): Defines a set of options for retrieving the location information.
 
 *** You need to be familiar with basic JavaScript in order to understand and use the API. ***
+
+
+
+  
+Presenting Data
+
+
+User location can be presented in two ways: Geodetic and Civic.
+
+1. The geodetic way to describe position refers directly to latitude and longitude.
+2. The civic representation of location data is presented in a format that is more easily read and understood by the average person.
+
+Each parameter has both a geodetic and a civic representation:
+
+Attribute   Geodetic      Civic
+
+Position    59.3, 18.6    Stockholm
+Elevation   10 meters     4th Floor
+Heading     234 degrees   City center
+Speed       5 km/h        Walking
+Orientation 45 degrees    North-East
+
+
+The getCurrentPosition() method returns an object if it is successful. The latitude, longitude, and accuracy properties are always returned.
