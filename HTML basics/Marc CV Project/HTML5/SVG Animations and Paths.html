@@ -1,0 +1,56 @@
+Shape Animations
+
+
+SVG animations can be created using the <animate> element.
+
+The example below creates a rectangle that will change its position in 3 seconds and will then repeat the animation twice:
+
+<svg width="1000" height="250">
+    <rect width="150" height="150" fill="orange">
+        <animate attributeName="x" from="0" to="300"
+      dur="3s" fill="freeze" repeatCount="2"/> 
+    </rect>
+</svg>
+  
+attributeName: Specifies which attribute will be affected by the animation
+from: Specifies the starting value of the attribute
+to: Specifies the ending value of the attribute
+dur: Specifies how long the animation runs (duration)
+fill: Specifies whether or not the attribute's value should return to its initial value when the animation is finished (Values: "remove" resets the value; "freeze" keeps the “to value”)
+repeatCount: Specifies the repeat count of the animation
+
+In the example above, the rectangle changes its x attribute from 0 to 300 in 3 seconds.
+  
+To repeat the animation indefinitely, use the value "indefinite" for the repeatCount attribute.
+
+
+  
+  
+  
+Paths
+
+
+The <path> element is used to define a path.
+
+The following commands are available for path data:
+M: moveto
+L: lineto
+H: horizontal lineto
+V: vertical lineto
+C: curveto
+S: smooth curveto
+Q: quadratic Bézier curve
+T: smooth quadratic Bézier curveto
+A: elliptical Arc
+Z: closepath
+
+Define a path using the d attribute:
+  
+<svg width="500" height="500">
+<path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000;  fill:none;" />
+</svg>
+  
+M places our "virtual pen" down at the position 0, 0. It then moves 200px down and to the right, then moves up to the position 200, 0. 
+The Z command closes the shape, which results in a hypotenuse
+  
+All of the above commands can also be expressed with lower case letters. When capital letters are used, it indicates absolute position; lower case indicates relative position.
