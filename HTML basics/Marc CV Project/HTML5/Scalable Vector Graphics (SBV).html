@@ -1,0 +1,73 @@
+Drawing Shapes
+
+SVG stands for Scalable Vector Graphics, and is used to draw shapes with HTML-style markup.
+It offers several methods for drawing paths, boxes, circles, text, and graphic images.
+
+
+SVG is not pixel-based, so it can be magnified infinitely with no loss of quality.
+
+
+
+Inserting SVG Images
+
+
+An SVG image can be added to HTML code with just a basic image tag that includes a source attribute pointing to the image:
+
+<img src="image.svg" alt="" height="300" />
+
+SVG defines vector-based graphics in XML format.
+
+
+
+
+
+Drawing a Circle
+
+
+To draw shapes with SVG, you first need to create an SVG element tag with two attributes: width and height.
+
+svg width="1000" height="1000"></svg>
+
+To create a circle, add a <circle> tag:
+  
+  <svg width="2000" height="2000">
+   <circle cx="80" cy="80" r="50" fill="green" />
+</svg>
+  
+- cx pushes the center of the circle further to the right of the screen
+- cy pushes the center of the circle further down from the top of the screen
+- r defines the radius
+- fill determines the color of our circle
+- stroke adds an outline to the circle
+
+Result: green circle
+  
+Every element and every attribute in SVG files can be animated.
+
+  
+  
+
+Other Shape Elements
+
+
+<rect> defines a rectangle:
+  
+The following code will draw a green-filled rectangle.
+
+<svg width="2000" height="2000">
+   <rect width="300" height="100" 
+     x="20" y="20" fill="green" />
+</svg>
+  
+  
+<line> defines a line segment:
+  
+<svg width="400" height="410">
+  <line x1="10" y1="10" x2="200" y2="100" 
+      style="stroke:#000000; stroke-linecap:round; 
+      stroke-width:20"  />
+</svg>
+  
+  
+
+  
