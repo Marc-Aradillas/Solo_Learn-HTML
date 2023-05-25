@@ -67,7 +67,22 @@ The following code will draw a green-filled rectangle.
       style="stroke:#000000; stroke-linecap:round; 
       stroke-width:20"  />
 </svg>
-  
-  
+ 
+(x1, y1) define the start coordinates(x2, y2) define the end coordinates.
 
   
+  
+  
+  
+<polyline> defines shapes built from multiple line definitions:
+  
+<svg width="2000" height="500">
+    <polyline style="stroke-linejoin:miter; stroke:black; 
+        stroke-width:12; fill: none;"
+        points="100 100, 150 150, 200 100" />
+</svg>
+  
+Points are the polyline's coordinates.
+The code below will draw a black check sign:
+  
+The width and height attributes of the <rect> element define the height and the width of the rectangle.
