@@ -24,3 +24,70 @@ HTML5 has introduced a new attribute called placeholder. On <input> and <textare
     <input type="text" name="email" placeholder="email@example.com" />
 </form>
 
+
+    
+The autofocus attribute makes the desired input focus when the form loads:
+
+<form>
+    <label for="email">Your e-mail address: </label>
+    <input type="text" name="email" autofocus />
+</form>
+    
+The required attribute tells the browser that the input is required.
+    
+    
+
+    
+    
+    
+The "required" attribute is used to make the input elements required.
+
+The form will not be submitted without filling in the required fields.
+
+Result:
+    
+<form autocomplete="off">
+    <label for="e-mail">Your e-mail address: </label>
+    <input name="Email" type="text" required />
+    <input type="submit" value="Submit"/>
+</form>
+    
+    *** The autocomplete attribute specifies whether a form or input field should have autocomplete turned on or off.
+When autocomplete is on, the browser automatically complete values based on values that the user has entered before. ***
+    
+
+    
+HTML5 added several new input types:
+- color
+- date
+- datetime
+- datetime-local
+- email
+- month
+- number
+- range
+- search
+- tel
+- time
+- url
+- week
+
+New input attributes in HTML5:
+- autofocus
+- form
+- formaction
+- formenctype
+- formmethod
+- formnovalidate
+- formtarget
+- height and width
+- list
+- min and max
+- multiple
+- pattern (regexp)
+- placeholder
+- required
+- step
+    
+*** Input types that are not supported by old web browsers, will behave as input type text. ***
+    
