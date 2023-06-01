@@ -72,3 +72,44 @@ Here is an example that draws the same rectangle before and after rotation is se
 </html>
 
 *** The rotation will only affect drawings made after the rotation is done. ***
+
+
+
+
+
+The scale() Method
+
+
+The scale() method scales the current drawing. It takes two parameters:
+- The number of times by which the image should be scaled in the X-direction.
+- The number of times by which the image should be scaled in the Y-direction.
+
+
+This will scale the canvas 1.5 times in the X-direction, and 4 times in Y-direction:
+
+<html>
+    <head></head>
+    <body>
+        <canvas id="canvas1" width="400" height="400">
+        </canvas> 
+    <script>
+        var canvas = document.getElementById('canvas1');
+        ctx =canvas.getContext('2d');
+        ctx.font="bold 22px Tahoma";
+        ctx.textAlign="start";
+        ctx.fillText("start", 10, 30);
+        ctx.translate(100, 150);
+        ctx.fillText("after translate", 0, 0);
+        ctx.rotate(1);
+        ctx.fillText("after rotate", 0, 0);
+        ctx.scale(1.5, 4);
+        ctx.fillText("after scale", 0,20);
+    </script>
+    </body>
+</html>
+
+*** If you scale a drawing, all future drawings will also be scaled. ***
+
+
+
+
