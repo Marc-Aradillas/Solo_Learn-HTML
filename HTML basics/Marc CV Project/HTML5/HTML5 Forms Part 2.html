@@ -7,3 +7,20 @@ The new search input type can be used to create a search box:
 You must remember to set a name for your input; otherwise, nothing will be submitted.
 
 
+Search Options
+
+The <datalist> tag can be used to define a list of pre-defined options for the search field:
+
+  
+<input id="car" type="text" list="colors" />
+<datalist id="colors">
+    <option value="Red">
+    <option value="Green">
+    <option value="Yellow">
+</datalist>
+  
+  
+<option> defines the options in a drop-down list for the user to select.
+  
+The ID of the datalist element must match with the list attribute of the input box.
+  
